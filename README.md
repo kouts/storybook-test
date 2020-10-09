@@ -1,5 +1,5 @@
 # storybook-test
-A Vue Storybook test project that it's published at [GitHub pages](https://kouts.github.io/storybook-test/). 
+A Vue.js Storybook test project that it's published at [GitHub pages](https://kouts.github.io/storybook-test/). 
 
 ## Project setup
 ```
