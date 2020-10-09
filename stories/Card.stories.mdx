@@ -1,0 +1,52 @@
+import { Meta, Story, ArgsTable, Preview } from '@storybook/addon-docs/blocks';
+
+import Card from '@/components/Card.vue'
+
+<!-- Story args -->
+<!-- https://storybook.js.org/docs/react/writing-stories/args -->
+export const args = {
+    headerTitle: ''
+}
+
+<!-- https://storybook.js.org/docs/react/api/argtypes -->
+export const argTypes = {
+    headerTitle: {
+        description: 'The title of the card'
+    }
+}
+
+<!-- Named exports of stories here -->
+export const Template = (args, { argTypes }) => {
+    return {
+        props: Object.keys(argTypes),
+        components: { Card },
+        template: '<Card v-bind="$props" />'
+    }
+} 
+
+<!-- Define story settings here -->
+<Meta 
+    title="Components/Card"
+    component={Card}
+    argTypes={argTypes}
+    args={args}
+/>
+
+# Card
+Displays a Bootstrap card
+
+<Story name="Default">
+    {Template.bind({})}
+</Story>
+
+<div style={{marginBottom: "30px"}}></div>
+
+## With title
+Displays a Bootstrap card with a header title
+<Story name="Header Title" args={{ headerTitle: 'Header title' }}>
+    {Template.bind({})}
+</Story>
+
+### Available props and slots
+<!-- https://storybook.js.org/docs/react/writing-docs/doc-blocks#customizing -->
+<ArgsTable story="Default" />

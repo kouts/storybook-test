@@ -1,4 +1,15 @@
 
 export const parameters = {
-  actions: { argTypesRegex: "^on[A-Z].*" },
+  actions: {
+    argTypesRegex: "^on[A-Z].*" 
+  },
+  layout: 'centered',
+  options: {
+    storySort: {
+      order: [
+        'Example',
+        'Components',
+      ]
+    }
+  }  
 }
