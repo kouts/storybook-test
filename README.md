@@ -1,4 +1,5 @@
 # storybook-test
+A Vue Storybook test project that it's published at [GitHub pages](https://kouts.github.io/storybook-test/). 
 
 ## Project setup
 ```
@@ -18,6 +19,11 @@ npm run build
 ### Lints and fixes files
 ```
 npm run lint
+```
+
+### Serve Storybook
+```
+npm run storybook
 ```
 
 ### Customize configuration
