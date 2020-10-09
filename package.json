@@ -8,7 +8,7 @@
     "lint": "vue-cli-service lint",
     "clean": "rimraf docs",
     "storybook": "start-storybook -s ./stories/assets -p 6006",
-    "build-storybook": "build-storybook -o docs -s ./stories/assets"
+    "build-storybook": "build-storybook -o docs-build -s ./stories/assets"
   },
   "dependencies": {
     "core-js": "^3.6.5",
